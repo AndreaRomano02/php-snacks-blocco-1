@@ -63,14 +63,15 @@ $matchs = [
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
   <title>Football Match</title>
 </head>
 
 <body>
-  <ul>
-    <h2>Partite</h2>
+  <ul class="container text-center">
+    <h2 class="mt-5">Partite</h2>
     <?php foreach ($matchs as $match) :  ?>
-      <li>
+      <li class="card text-center py-5 m-3 bg-danger text-white fw-bold fs-5">
         <p><?= $match['home']['team'] ?> - <?= $match['host']['team'] ?> | <?= $match['home']['score'] ?> - <?= $match['host']['score'] ?></p>
       </li>
     <?php endforeach; ?>
