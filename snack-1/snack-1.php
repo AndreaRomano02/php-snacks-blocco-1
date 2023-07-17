@@ -76,6 +76,8 @@ $matchs = [
       </li>
     <?php endforeach; ?>
   </ul>
+
+  <a href="../index.html">Torna alla home</a>
 </body>
 
 </html>
