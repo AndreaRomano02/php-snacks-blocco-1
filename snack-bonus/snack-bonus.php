@@ -21,7 +21,8 @@ $array_paragraph = explode('.', $paragraph);
   <?php foreach ($array_paragraph as $single_paragraph) : ?>
     <p><?= $single_paragraph ?>.</p>
   <?php endforeach ?>
-  <p></p>
+
+  <a href="../index.html">Torna alla home</a>
 </body>
 
 </html>
